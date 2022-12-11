@@ -1,0 +1,62 @@
+.base-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  &__form {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 30px 10px #00000028;
+    header {
+      position: relative;
+      padding: 10px 5px;
+      font-size: 30px;
+      text-align: center;
+      .close-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: contain;
+        padding: 5px;
+        max-width: 26px;
+        max-height: 26px;
+        border-radius: 50%;
+        transition: background 300ms ease-in-out;
+        &:hover {
+          background: #c5bfbf;
+          cursor: pointer;
+          transition: background 300ms ease-in-out;
+        }
+      }
+    }
+    &-content {
+      width: 100%;
+      height: fit-content;
+      background: whitesmoke;
+    }
+    footer {
+      .footer-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    min-width: 400px;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 400px;
+    max-height: 700px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+}
