@@ -1,0 +1,30 @@
+.home-container {
+  display: grid;
+  grid-template-columns: minmax(50px,auto) minmax(900px,1200px) minmax(50px,auto);
+  grid-template-rows: 100%;
+  height: 100%;
+  .left-empty {
+    grid-column: 1;
+    background: gray;
+    height: 100%;
+  }
+  .center-container {
+    grid-column: 2;
+    background: aquamarine;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    .home-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+  .right-empty {
+    grid-column: 3;
+    background: gray;
+    height: 100%;
+  }
+}
