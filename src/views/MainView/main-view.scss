@@ -1,0 +1,18 @@
+.main-view-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+.main-view-container__sidebar {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 10px;
+}
+
+.main-view-container__content {
+  grid-column: 2;
+  grid-row: 1;
+  background: aqua;
+}
